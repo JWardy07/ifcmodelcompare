@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IFC Model Compare — Support</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #071225;
+      --background-secondary: #101c3f;
+      --card: rgba(255, 255, 255, 0.07);
+      --border: rgba(123, 205, 255, 0.22);
+      --text: #f4f8ff;
+      --secondary: #c5d3ed;
+      --cyan: #45e8ef;
+      --purple: #9b5cff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(41, 179, 255, 0.18), transparent 36%),
+        radial-gradient(circle at bottom right, rgba(143, 56, 255, 0.22), transparent 42%),
+        linear-gradient(160deg, var(--background), var(--background-secondary));
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero {
+      padding: 36px;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      padding: 28px;
+      margin-top: 20px;
+    }
+
+    h1,
+    h2 {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 54px);
+      line-height: 1.08;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      color: var(--cyan);
+      font-size: 24px;
+    }
+
+    p,
+    li {
+      color: var(--secondary);
+    }
+
+    ul,
+    ol {
+      padding-left: 22px;
+    }
+
+    a {
+      color: var(--cyan);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(69, 232, 239, 0.20), rgba(155, 92, 255, 0.25));
+      border: 1px solid rgba(69, 232, 239, 0.34);
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .contact {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 13px 20px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--cyan), var(--purple));
+      color: #071225;
+      font-weight: 800;
+    }
+
+    .footer {
+      text-align: center;
+      color: rgba(197, 211, 237, 0.7);
+      padding-top: 28px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">IFC Model Compare Support</div>
+
+      <h1>Compare IFC model revisions with confidence.</h1>
+
+      <p>
+        IFC Model Compare helps construction, design and BIM professionals compare
+        two IFC model revisions, review added, removed, changed and unchanged
+        objects, inspect model data and export structured comparison reports.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Supported files</h2>
+
+      <p>
+        IFC Model Compare currently supports Industry Foundation Classes files
+        using the <strong>.ifc</strong> file extension.
+      </p>
+
+      <p>
+        IFCZIP and IFCXML files are not currently supported.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>How to compare two models</h2>
+
+      <ol>
+        <li>Open IFC Model Compare.</li>
+        <li>Import the original IFC as <strong>Model A — Baseline IFC</strong>.</li>
+        <li>Import the revised IFC as <strong>Model B — Revised IFC</strong>.</li>
+        <li>Wait for the comparison to complete.</li>
+        <li>Review the results in the Compare, 3D and Data sections.</li>
+        <li>Export the results as CSV, JSON, Markdown or PDF.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>3D viewer</h2>
+
+      <p>
+        The app uses its modern That Open viewer by default. The Classic viewer
+        remains available as a fallback from Settings or when a model cannot be
+        prepared by the primary viewer.
+      </p>
+
+      <p>
+        Large IFC files can take longer to prepare on older devices. Keep the app
+        open while conversion is in progress.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Troubleshooting</h2>
+
+      <ul>
+        <li>Confirm the selected file has the .ifc extension.</li>
+        <li>Allow the file to finish copying before leaving the app.</li>
+        <li>For large files, allow additional time for the first 3D conversion.</li>
+        <li>Use Retry if a temporary viewer error occurs.</li>
+        <li>Select Use Classic if the primary viewer cannot prepare a model.</li>
+        <li>Clear and re-import a model if the source file has been replaced.</li>
+        <li>Ensure sufficient free storage is available for model processing and cache files.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+
+      <p>
+        IFC files are processed locally on your device and are not uploaded by
+        IFC Model Compare. The embedded viewer uses runtime resources packaged
+        inside the app.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Contact support</h2>
+
+      <p>
+        Include the following information when reporting a problem:
+      </p>
+
+      <ul>
+        <li>Device model</li>
+        <li>iOS, iPadOS or macOS version</li>
+        <li>IFC file size</li>
+        <li>Whether the issue affects Model A, Model B or both</li>
+        <li>A screenshot of any error message</li>
+      </ul>
+
+      <a class="contact"
+         href="mailto:jamiepward@googlemail.com?subject=IFC%20Model%20Compare%20Support">
+        Email Support
+      </a>
+    </section>
+
+    <div class="footer">
+      <p>IFC Model Compare</p>
+      <p>© 2026 Jamie Ward. All rights reserved.</p>
+    </div>
+  </main>
+</body>
+</html>
